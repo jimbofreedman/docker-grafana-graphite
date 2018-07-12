@@ -13,7 +13,8 @@ need as a prerequisite is having `docker`, `docker-compose`, and `make` installe
 
 - `80`: the Grafana web interface.
 - `81`: the Graphite web port
-- `2003`: the Graphite data port
+- `2003`: the Graphite TCP data port
+- `2005`: the Graphite UDP data port
 - `8125`: the StatsD port.
 - `8126`: the StatsD administrative port.
 

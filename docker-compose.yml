@@ -2,14 +2,15 @@ version: '2'
 services:
   grafana_graphite:
     build: .
-    image: kamon/grafana_graphite
-    container_name: kamon-grafana-dashboard
+    image: jimbofreedman/grafana_graphite
+    container_name: grafana-dashboard
     ports:
       - '80:80'
       - '81:81'
       - '8125:8125/udp'
       - '8126:8126'
       - '2003:2003'
+      - '2005:2005/udp'
     volumes:
       - ./data/whisper:/opt/graphite/storage/whisper
       - ./data/grafana:/opt/grafana/data

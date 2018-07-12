@@ -116,6 +116,9 @@ EXPOSE 81
 # Graphite Carbon port
 EXPOSE 2003
 
+# Graphite Carbon UDP port
+EXPOSE 2005
+
 
 # -------- #
 #   Run!   #
